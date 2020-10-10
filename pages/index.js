@@ -4,13 +4,16 @@ import Layout from '../src/layout/Layout'
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import Scripture from '../src/components/Scripture';
+import CheckboxLabels from '../src/components/CheckboxLabels';
 
 const useStyles = makeStyles((theme) => ({
 
   paper: {
     padding: theme.spacing(2),
-    textAlign: 'center',
+    textAlign: 'left',
     color: theme.palette.text.secondary,
+    fontSize: '2rem'
   },
 }));
 
@@ -25,10 +28,14 @@ export default function Home() {
       <Layout>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={8}>
-          <Paper className={classes.paper}>xs=12 sm=8</Paper>
+          <Paper className={classes.paper}>
+            <Scripture />
+          </Paper>
         </Grid>
         <Grid item xs={12} sm={4}>
-          <Paper className={classes.paper}>xs=12 sm=4</Paper>
+          <Paper className={classes.paper}>
+            <CheckboxLabels />
+          </Paper>
         </Grid>
       </Grid>
       </Layout>
