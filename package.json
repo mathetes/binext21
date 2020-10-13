@@ -10,11 +10,13 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
+    "@nadavshaar/react-grid-table": "git+https://github.com/NadavShaar/react-grid-table.git",
     "material-ui-icons": "^1.0.0-beta.36",
     "next": "9.5.4",
     "react": "16.13.1",
     "react-awesome-slider": "^4.1.0",
     "react-dom": "16.13.1",
+    "react-flexy-table": "^1.2.4",
     "styled-components": "^5.2.0"
   }
 }
